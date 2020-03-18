@@ -16,6 +16,7 @@
 		8E051A272422B23E002E98C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E051A262422B23E002E98C9 /* Assets.xcassets */; };
 		8E051A2A2422B23E002E98C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E051A282422B23E002E98C9 /* LaunchScreen.storyboard */; };
 		8E051A492422C54F002E98C9 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A482422C54F002E98C9 /* Space.swift */; };
+		8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8E051A292422B23E002E98C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E051A2B2422B23E002E98C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E051A482422C54F002E98C9 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardStructure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		8E051A442422B600002E98C9 /* Structors */ = {
 			isa = PBXGroup;
 			children = (
+				8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */,
 			);
 			path = Structors;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */,
 				8E051A202422B23B002E98C9 /* GameScene.swift in Sources */,
 				8E051A222422B23B002E98C9 /* GameViewController.swift in Sources */,
 				8E051A492422C54F002E98C9 /* Space.swift in Sources */,
