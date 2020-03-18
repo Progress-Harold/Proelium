@@ -17,6 +17,7 @@
 		8E051A2A2422B23E002E98C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E051A282422B23E002E98C9 /* LaunchScreen.storyboard */; };
 		8E051A492422C54F002E98C9 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A482422C54F002E98C9 /* Space.swift */; };
 		8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */; };
+		8E051A4E2422D8B2002E98C9 /* TokenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8E051A2B2422B23E002E98C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E051A482422C54F002E98C9 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardStructure.swift; sourceTree = "<group>"; };
+		8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		8E051A3A2422B380002E98C9 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				8E051A4C2422D88E002E98C9 /* Delegates */,
 				8E051A432422B5F2002E98C9 /* Entities */,
 				8E051A442422B600002E98C9 /* Structors */,
 			);
@@ -247,6 +250,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		8E051A4C2422D88E002E98C9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E051A4E2422D8B2002E98C9 /* TokenDelegate.swift in Sources */,
 				8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */,
 				8E051A202422B23B002E98C9 /* GameScene.swift in Sources */,
 				8E051A222422B23B002E98C9 /* GameViewController.swift in Sources */,
