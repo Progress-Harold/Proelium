@@ -187,8 +187,8 @@
 		8E051A3F2422B3E2002E98C9 /* SceneController */ = {
 			isa = PBXGroup;
 			children = (
-				8E051A1F2422B23B002E98C9 /* GameScene.swift */,
 				A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */,
+				A26D3C3C24232DAE00F29436 /* Sample */,
 			);
 			path = SceneController;
 			sourceTree = "<group>";
@@ -259,6 +259,14 @@
 				8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A26D3C3C24232DAE00F29436 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				8E051A1F2422B23B002E98C9 /* GameScene.swift */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
