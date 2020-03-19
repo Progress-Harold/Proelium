@@ -10,8 +10,21 @@ import Foundation
 import SpriteKit
 
 class GameSceneTemplate: SKScene {
+    var board: GameBoardStructure = GameBoardStructure()
+    
     override func sceneDidLoad() {
         super.sceneDidLoad()
-        GameBoardStructure().setUp()
+        self.addChild(board.mainNode)
+        
+        setupBoard()
+    }
+    
+    func setupBoard() {
+        board.setup()
+        board.spaces.forEach { (space) in
+            let tokenSpace = SKSpriteNode(texture: SKTexture(imageNamed: "TokenSpace"))
+            tokenSpace.position = space.position ?? CGPoint()
+            self.addChild(tokenSpace)
+        }
     }
 }

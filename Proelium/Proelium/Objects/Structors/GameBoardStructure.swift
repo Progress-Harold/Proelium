@@ -11,6 +11,9 @@ import SpriteKit
 
 /// Structure to hold the spaces together
 struct GameBoardStructure {
+    var mainNode: SKNode = SKNode()
+
+    var spaces: [Space] = []
     
     // MARK: Player 1 spaces
     // tier 1s
@@ -89,7 +92,9 @@ struct GameBoardStructure {
     let lm8: Space = Space(24)
     let lm9: Space = Space(25)
     
-    func setUp() {
+    mutating func setup() {
+        spaces = [m11, m10, m9, m8, m7, m6, m5, m4, m3, m2, m1, lm9, lm8, lm7, lm6, lm5, lm4, lm3, lm2, lm1, r3, r2, r1, c4, c3, c2, c1, s3, s2, s1, h2, h1, o, h, d, k, um9, um8, um7, um6, um5, um4, um3, um2, um1, p2c1, p2c2, p2c3, p2c4, p2r1, p2r2, p2r3, p2h1, p2h2, p2s1, p2s2, p2s3, p2k, p2d, p2h, p2o]
+        
         // MARK: P1 Base Structure 3 spaces
         k.ul = d
         k.t = h
@@ -693,5 +698,81 @@ struct GameBoardStructure {
         p2r3.lr = um3
         p2r3.b = um2
         p2r3.ll = um1
+        
+        setupPos()
+    }
+    
+    func setupPos() {
+        um8.position = CGPoint(x: 313.05413818359375  + 10, y: 140.29449462890625)
+        um9.position = CGPoint(x: 402.3926696777344   + 10, y: 141.3130645751953)
+        um3.position = CGPoint(x: -135.16650390625    + 10, y: 140.2939453125)
+        um5.position = CGPoint(x: 42.30303192138672   + 10, y: 140.0267791748047)
+        um6.position = CGPoint(x: 132.32595825195312  + 10, y: 140.0272674560547)
+        um7.position = CGPoint(x: 222.72906494140625  + 10, y: 140.29391479492188)
+        um1.position = CGPoint(x: -314.2081604003906  + 10, y: 140.2932891845703)
+        um4.position = CGPoint(x: -46.355125427246094 + 10, y: 140.02728271484375)
+        um2.position = CGPoint(x: -224.045654296875   + 10, y: 140.29405212402344)
+        
+        m11.position = CGPoint(x: 491.8421936035156  + 10, y: 15.444347381591797)
+        m9.position = CGPoint(x: 312.3088073730469   + 10, y: 15.443714141845703)
+        m4.position = CGPoint(x: -134.46609497070312 + 10, y: 15.443805694580078)
+        m8.position = CGPoint(x: 223.42947387695312  + 10, y: 15.443805694580078)
+        m2.position = CGPoint(x: -314.1294860839844  + 10, y: 14.42464828491211)
+        m7.position = CGPoint(x: 134.61801147460938  + 10, y: 15.710468292236328)
+        m1.position = CGPoint(x: -404.2592468261719  + 10, y: 14.424560546875)
+        m3.position = CGPoint(x: -224.7911376953125  + 10, y: 15.443225860595703)
+        m10.position = CGPoint(x: 402.4713439941406  + 10, y: 15.44448471069336)
+        m6.position = CGPoint(x: 45.959842681884766  + 10, y: 15.710956573486328)
+        m5.position = CGPoint(x: -44.063079833984375 + 10, y: 15.710468292236328)
+        
+        lm7.position = CGPoint(x: 224.03842163085938  + 10, y: -111.322021484375)
+        lm4.position = CGPoint(x: -43.45404052734375  + 10, y: -111.05535888671875)
+        lm8.position = CGPoint(x: 312.91754150390625  + 10, y: -111.32211303710938)
+        lm2.position = CGPoint(x: -224.1822509765625  + 10, y: -111.32260131835938)
+        lm6.position = CGPoint(x: 135.22703552246094  + 10, y: -111.05535888671875)
+        lm1.position = CGPoint(x: -313.5207824707031  + 10, y: -112.34117126464844)
+        lm9.position = CGPoint(x: 403.0800476074219   + 10, y: -111.32133483886719)
+        lm5.position = CGPoint(x: 46.56887435913086   + 10, y: -111.05487060546875)
+        lm3.position = CGPoint(x: -133.85714721679688 + 10, y: -111.322021484375)
+
+        r2.position = CGPoint(x: 224.27215576171875  + 10, y: -235.19635009765625)
+        c3.position = CGPoint(x: -43.287681579589844 + 10, y: -234.92965698242188)
+        r1.position = CGPoint(x: 135.46078491210938  + 10, y: -234.9296875)
+        c1.position = CGPoint(x: -223.94854736328125 + 10, y: -235.19692993164062)
+        c2.position = CGPoint(x: -133.6234130859375  + 10, y: -235.19635009765625)
+        r3.position = CGPoint(x: 313.15106201171875  + 10, y: -235.19644165039062)
+        c4.position = CGPoint(x: 46.80250549316406   + 10, y: -234.92919921875)
+
+        s1.position = CGPoint(x: 46.66770935058594  + 10, y: -361.03448486328125)
+        s3.position = CGPoint(x: 224.13739013671875 + 10, y: -361.3016357421875)
+        s2.position = CGPoint(x: 135.32598876953125 + 10, y: -361.03497314453125)
+        h2.position = CGPoint(x: -43.3552131652832  + 10, y: -361.03497314453125)
+        h1.position = CGPoint(x: -133.7581787109375 + 10, y: -361.3016357421875)
+
+        o.position = CGPoint(x: 134.98837280273438 + 10, y: -485.37530517578125)
+        h.position = CGPoint(x: 47.797584533691406 + 10, y: -485.3748779296875)
+        d.position = CGPoint(x: -42.225341796875   + 10, y: -485.3753662109375)
+
+        k.position = CGPoint(x: 47.797393798828125     + 10, y: -615.3750610351562)
+        
+        p2c3.position = CGPoint(x: 133.1466064453125   + 10, y: 263.21014404296875)
+        p2r2.position = CGPoint(x: -134.34585571289062 + 10, y: 263.4768371582031)
+        p2c2.position = CGPoint(x: 221.88406372070312  + 10, y: 263.4753723144531)
+        p2r1.position = CGPoint(x: -45.53446960449219  + 10, y: 263.2101745605469)
+        p2r3.position = CGPoint(x: -223.224853515625   + 10, y: 263.4769287109375)
+        p2c4.position = CGPoint(x: 43.123687744140625  + 10, y: 263.20965576171875)
+        p2c1.position = CGPoint(x: 313.8748474121094   + 10, y: 263.47735595703125)
+        
+        p2h1.position = CGPoint(x: 222.8778533935547   + 10, y: 385.5700988769531)
+        p2s2.position = CGPoint(x: -46.206298828125    + 10, y: 385.3034362792969)
+        p2s1.position = CGPoint(x: 42.45185852050781   + 10, y: 385.3030090332031)
+        p2s3.position = CGPoint(x: -135.01771545410156 + 10, y: 385.5701599121094)
+        p2h2.position = CGPoint(x: 132.4747772216797   + 10, y: 385.3034973144531)
+
+        p2h.position = CGPoint(x: 42.74076843261719    + 10, y: 507.9861755371094)
+        p2d.position = CGPoint(x: 132.76370239257812   + 10, y: 507.9866638183594)
+        p2o.position = CGPoint(x: -45.917381286621094  + 10, y: 507.9866027832031)
+
+        p2k.position = CGPoint(x: 42.74067687988281    + 10, y: 637.9863891601562)
     }
 }
