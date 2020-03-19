@@ -18,6 +18,7 @@
 		8E051A492422C54F002E98C9 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A482422C54F002E98C9 /* Space.swift */; };
 		8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */; };
 		8E051A4E2422D8B2002E98C9 /* TokenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */; };
+		A26D3C3B24231F5F00F29436 /* GameSceneTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8E051A482422C54F002E98C9 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardStructure.swift; sourceTree = "<group>"; };
 		8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDelegate.swift; sourceTree = "<group>"; };
+		A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				8E051A1F2422B23B002E98C9 /* GameScene.swift */,
+				A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */,
 			);
 			path = SceneController;
 			sourceTree = "<group>";
@@ -286,7 +289,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "John Torres";
+				ORGANIZATIONNAME = EightFoldGames;
 				TargetAttributes = {
 					8E051A152422B23B002E98C9 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -337,6 +340,7 @@
 				8E051A222422B23B002E98C9 /* GameViewController.swift in Sources */,
 				8E051A492422C54F002E98C9 /* Space.swift in Sources */,
 				8E051A1A2422B23B002E98C9 /* AppDelegate.swift in Sources */,
+				A26D3C3B24231F5F00F29436 /* GameSceneTemplate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,13 +485,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9MANJGMHYB;
+				DEVELOPMENT_TEAM = AJZ8YNH2N6;
 				INFOPLIST_FILE = Proelium/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = John.Proelium;
+				PRODUCT_BUNDLE_IDENTIFIER = EightFoldGames.Proelium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,13 +503,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9MANJGMHYB;
+				DEVELOPMENT_TEAM = AJZ8YNH2N6;
 				INFOPLIST_FILE = Proelium/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = John.Proelium;
+				PRODUCT_BUNDLE_IDENTIFIER = EightFoldGames.Proelium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
