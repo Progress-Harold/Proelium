@@ -29,6 +29,16 @@ class Space {
     var r: Space?
     
     var token: String?
+    var sprite: SKSpriteNode = SKSpriteNode()
+    
+    var glow: SKSpriteNode {
+        let availableSpace = SKSpriteNode(texture: SKTexture(imageNamed: "availableSpace"))
+        availableSpace.alpha = 0
+        sprite.addChild(availableSpace)
+        return availableSpace
+    }
+    
+    var glowActivated: Bool = false
     
     var position: CGPoint?
     
@@ -57,6 +67,16 @@ class Space {
             }
         }
         return spaces
+    }
+    
+    func activateAvailableGlow() {
+        glowActivated = true
+        print(sprite.size)
+        if glowActivated {
+            DispatchQueue.main.async {
+                self.glow.run(SKAction(named: "Pulse") ?? SKAction())
+            }
+        }
     }
     
     func moveTo(location: Location) {

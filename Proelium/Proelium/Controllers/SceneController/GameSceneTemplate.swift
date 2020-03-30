@@ -14,7 +14,7 @@ class GameSceneTemplate: SKScene {
     
     override func sceneDidLoad() {
         super.sceneDidLoad()
-        self.addChild(board.mainNode)
+        addChild(board.mainNode)
         
         setupBoard()
     }
@@ -24,7 +24,19 @@ class GameSceneTemplate: SKScene {
         board.spaces.forEach { (space) in
             let tokenSpace = SKSpriteNode(texture: SKTexture(imageNamed: "TokenSpace"))
             tokenSpace.position = space.position ?? CGPoint()
-            self.addChild(tokenSpace)
+            space.sprite = tokenSpace
+            self.board.mainNode.addChild(tokenSpace)
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.board.spaceSelected = false
+        }
+        
+        for t in touches {
+            let location = t.location(in: board.mainNode)
+            board.selectSpace(location)
         }
     }
 }

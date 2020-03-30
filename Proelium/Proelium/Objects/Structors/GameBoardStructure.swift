@@ -13,6 +13,8 @@ import SpriteKit
 struct GameBoardStructure {
     var mainNode: SKNode = SKNode()
 
+    var selectedSpaceMarker: Int?
+    var spaceSelected: Bool = false
     var spaces: [Space] = []
     
     // MARK: Player 1 spaces
@@ -700,6 +702,32 @@ struct GameBoardStructure {
         p2r3.ll = um1
         
         setupPos()
+    }
+    
+    mutating func selectSpace(_ location: CGPoint) {
+        diactivateGlowingSpace {
+            spaces.forEach { space in
+                if space.sprite.contains(location),
+                    !spaceSelected {
+                    self.spaceSelected = true
+                    print("Slected Spaces: Space[\(space.marker)]")
+                    space.availableSpaces().forEach { (s) in
+                        s.activateAvailableGlow()
+                        print(s.marker)
+                    }
+                }
+            }
+        }
+    }
+    
+    func diactivateGlowingSpace(completion: ()->()) {
+        spaces.forEach { space in
+            space.glowActivated = false
+            space.glow.removeAllActions()
+            space.sprite.removeAllChildren()
+        }
+
+        completion()
     }
     
     func setupPos() {
