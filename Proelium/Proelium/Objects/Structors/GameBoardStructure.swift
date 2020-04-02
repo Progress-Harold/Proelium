@@ -102,7 +102,7 @@ struct GameBoardStructure {
         k.ul = d
         k.t = h
         k.ur = o
-        // MARK: Lvl 3 Row
+        // MARK: Tier 3 ro
         // MARK: Defense 5 space
         d.ul = h1
         d.t = h2
@@ -124,7 +124,7 @@ struct GameBoardStructure {
         o.b = k
         o.ul = s1
         o.l  = h
-        // MARK: Tier 3 row
+        // MARK: Tier 2 row
         // Space 1
         h1.ul = c1
         h1.t = c2
@@ -150,7 +150,7 @@ struct GameBoardStructure {
         s1.ll = d
         // space 4
         s2.l = s1
-        s2.ul = c3
+        s2.ul = c4
         s2.t = r1
         s2.ur = r2
         s2.r = s3
@@ -179,127 +179,9 @@ struct GameBoardStructure {
         c2.b = h1
         // space 3
         c3.l = c2
-        c3.ul = lm2
-        c3.t = lm3
-        c3.ur = lm4
-        c3.r = c4
-        c3.lr = s1
-        c3.b = h2
-        c3.ll = h1
-        // space 4
-        c4.l = c3
-        c4.ul = lm4
-        c4.t = lm5
-        c4.ur = lm6
-        c4.r = r1
-        c4.lr = s2
-        c4.b = s1
-        c4.ll = h2
-        // space 5
-        r1.l = c4
-        r1.ul = lm5
-        r1.t = lm6
-        r1.ur = lm7
-        r1.r = r2
-        r1.lr = s3
-        r1.b = s2
-        r1.ll = s1
-        // space 6
-        r2.l = r1
-        r2.ul = lm6
-        r2.t = lm7
-        r2.ur = lm8
-        r2.r = r3
-        r2.b = s3
-        r2.ll = s2
-        // space 7
-        r3.l = r2
-        r3.ul = lm7
-        r3.t = lm8
-        r3.ur = lm9
-        r3.ll = s3
-
-
-        // MARK: P1 Base Structure 3 spaces
-        k.ur = o
-        // MARK: Tier 3 Row
-        // MARK: Defense 5 space
-        d.ul = h1
-        d.t = h2
-        d.ur = s1
-        d.r = h
-        d.lr = k
-        // MARK:  Heal 6 space
-        h.l = d
-        h.ul = h2
-        h.t = s1
-        h.ur = s2
-        h.r = o
-        h.b = k
-        // MARK: Offense 5 spaces
-        o.l = h
-        o.ul = s1
-        o.t = s2
-        o.ur = s3
-        o.ll = k
-        // MARK: Tier 2 row
-        // Space 1
-        h1.ul = c1
-        h1.t = c2
-        h1.ur = c3
-        h1.r = h2
-        h1.lr = d
-        // space 2
-        h2.l = h1
-        h2.ul = c2
-        h2.t = c3
-        h2.ur = c4
-        h2.r = s1
-        h2.lr = h
-        h2.b = d
-        // space 3
-        s1.l = h2
-        s1.ul = c3
-        s1.t = c4
-        s1.ur = r1
-        s1.r = s2
-        s1.lr = o
-        s1.b = h
-        s1.ll = d
-        // space 4
-        s2.l = s1
-        s2.ul = c3
-        s2.t = r1
-        s2.ur = r2
-        s2.r = s3
-        s2.b = o
-        s2.ll = h
-        // space 5
-        s3.l = s2
-        s3.ul = r1
-        s3.t = r2
-        s3.ur = r3
-        s3.ll = o
-        // MARK: Tier 1 Row
-        // space 1
-        c1.ul = lm1
-        c1.t = lm2
-        c1.ur = lm3
-        c1.r = c2
-        c1.lr = h1
-        // space 2
-        c2.l = c1
-        c2.ul = lm2
-        c2.t = lm3
-        c2.ur = lm4
-        c2.r = c3
-        c2.lr = h2
-        c2.b = h1
-        // space 3
-        c3.l = c2
-        c3.ul = lm2
-        c3.t = lm3
-        c3.ur = lm4
+        c3.ul = lm3
+        c3.t = lm4
+        c3.ur = lm5
         c3.r = c4
         c3.lr = s1
         c3.b = h2
@@ -381,8 +263,8 @@ struct GameBoardStructure {
         // space 6
         lm6.l = lm5
         lm6.ul = m6
-        lm6.t = m8
-        lm6.ur = m9
+        lm6.t = m7
+        lm6.ur = m8
         lm6.r = lm7
         lm6.lr = r2
         lm6.b = r1
@@ -399,20 +281,22 @@ struct GameBoardStructure {
         // space 8
         lm8.l = lm7
         lm8.ul = m8
-        lm8.ur = m9
+        lm8.t = m9
+        lm8.ur = m10
         lm8.r = lm9
         lm8.b = r3
         lm8.ll = r2
         // space 9
         lm9.l = lm8
-        lm9.ul = m8
-        lm9.t = m9
+        lm9.ul = m9
+        lm9.t = m10
+        lm9.ur = m11
         lm9.ll = r3
         //  MARK: Middle Row
         // Space 1
         m1.ur = um1
         m1.r = m2
-        m1.ur = lm1
+        m1.lr = lm1
         // Space 2
         m2.l = m1
         m2.t = um1
@@ -452,8 +336,8 @@ struct GameBoardStructure {
         m6.ul = um4
         m6.t = um5
         m6.ur = um6
-        m6.r = um7
-        m6.ur = lm6
+        m6.r = m7
+        m6.lr = lm6
         m6.b = lm5
         m6.ll = lm4
         // space 7
@@ -522,8 +406,8 @@ struct GameBoardStructure {
         um4.l = um3
         um4.ul = p2r2
         um4.t = p2r1
-        um4.ur = p2c3
-        um4.r = p2c2
+        um4.ur = p2c4
+        um4.r = um5
         um4.lr = m6
         um4.b = m5
         um4.ll = m4
@@ -540,7 +424,7 @@ struct GameBoardStructure {
         um6.l = um5
         um6.ul = p2c4
         um6.t = p2c3
-        um6.ur = p2c1
+        um6.ur = p2c2
         um6.r = um7
         um6.lr = m8
         um6.b = m7
@@ -564,10 +448,10 @@ struct GameBoardStructure {
         um8.ll = m8
         // space 9
         um9.l = um8
-        um9.ul = p2c2
-        um9.lr = m10
-        um9.b = m9
-        um9.ll = m8
+        um9.ul = p2c1
+        um9.lr = m11
+        um9.b = m10
+        um9.ll = m9
         // FIXME: finish player 2
 
 
@@ -578,6 +462,7 @@ struct GameBoardStructure {
         // MARK: Tier 3 Row
         // MARK: Defense 5 space
         p2d.l = p2h
+        p2d.ul = p2k
         p2d.lr = p2h1
         p2d.b = p2h2
         p2d.ll = p2s1
@@ -590,11 +475,11 @@ struct GameBoardStructure {
         p2h.ll = p2s2
         // MARK: Offense 5 spaces
         //p2o
-        p2o.r = h
-        p2o.lr = s1
-        p2o.b = s2
-        p2o.ur = s3
-        p2o.ll = k
+        p2o.r = p2h
+        p2o.lr = p2s1
+        p2o.b = p2s2
+        p2o.ur = p2k
+        p2o.ll = p2s3
         // MARK: Tier 2 row
         // Space 1
         //p2h1
