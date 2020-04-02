@@ -15,6 +15,7 @@ struct GameBoardStructure {
 
     var selectedSpaceMarker: Int?
     var spaceSelected: Bool = false
+    var selectedSpace: Space?
     var spaces: [Space] = []
     
     // MARK: Player 1 spaces
@@ -705,19 +706,29 @@ struct GameBoardStructure {
     }
     
     mutating func selectSpace(_ location: CGPoint) {
-        diactivateGlowingSpace {
             spaces.forEach { space in
-                if space.sprite.contains(location),
-                    !spaceSelected {
-                    self.spaceSelected = true
-                    print("Slected Spaces: Space[\(space.marker)]")
-                    space.availableSpaces().forEach { (s) in
-                        s.activateAvailableGlow()
-                        print(s.marker)
+                if space.sprite.contains(location) {
+                    if !spaceSelected {
+                        self.selectedSpace = space
+                        self.spaceSelected = true
+                        print("Slected Spaces: Space[\(space.marker)]")
+                        if !space.isEmpty {
+                            space.availableSpaces().forEach { (s) in
+                                s.activateAvailableGlow()
+                                print(s.marker)
+                            }
+                        }
                     }
-                }
+                    else {
+                        if space.glowActivated {
+                            space.token = self.selectedSpace?.token
+                            space.token?.tokenSprite.run(.move(to: space.position!, duration: 0.7))
+                        }
+                    }
             }
         }
+//        diactivateGlowingSpace {
+//        }
     }
     
     func diactivateGlowingSpace(completion: ()->()) {

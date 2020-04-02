@@ -28,7 +28,7 @@ class Space {
     var lr: Space?
     var r: Space?
     
-    var token: String?
+    var token: Token?
     var sprite: SKSpriteNode = SKSpriteNode()
     
     var glow: SKSpriteNode {
@@ -86,56 +86,56 @@ class Space {
                 self.l?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.l?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "None")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .upperLeft:
             if self.availableSpaces().contains(where: {$0.marker == self.ul?.marker}) {
                 self.ul?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.ul?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "None")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .top:
             if self.availableSpaces().contains(where: {$0.marker == self.t?.marker}) {
                 self.t?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.t?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "None")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .upperRight:
             if self.availableSpaces().contains(where: {$0.marker == self.ur?.marker}) {
                 self.ur?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.ur?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "Empty")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .right:
             if self.availableSpaces().contains(where: {$0.marker == self.r?.marker}) {
                 self.r?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.r?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "Empty")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .lowerRight:
             if self.availableSpaces().contains(where: {$0.marker == self.lr?.marker}) {
                 self.lr?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.lr?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "Empty")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .bottom:
             if self.availableSpaces().contains(where: {$0.marker == self.b?.marker}) {
                 self.b?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.b?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "Empty")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         case .lowerLeft:
             if  self.availableSpaces().contains(where: {$0.marker == self.ll?.marker}) {
                 self.ll?.token = self.token
                 print("Player moved token\(String(describing: self.token)) from Space#:\(self.marker) -> Space#:\(String(describing: self.ll?.marker))")
                 self.token = nil
-                print("Previous Token:\(self.token ?? "Empty")")
+                print("Previous Token:\(self.token ?? Token(dict: [:]))")
             }
         }
     }
