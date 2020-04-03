@@ -11,12 +11,14 @@ import SpriteKit
 
 class GameSceneTemplate: SKScene {
     var board: GameBoardStructure = GameBoardStructure()
+    var sController = SpaceController.sharedInstence
     
     override func sceneDidLoad() {
         super.sceneDidLoad()
         addChild(board.mainNode)
         
         setupBoard()
+        sController.setTokenWith(board.k, in: self)
     }
     
     func setupBoard() {
@@ -30,8 +32,12 @@ class GameSceneTemplate: SKScene {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.board.spaceSelected = false
+        
+        if self.board.spaceSelected {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.board.spaceSelected = false
+                self.board.diactivateGlowingSpace(completion: {})
+            }
         }
         
         for t in touches {

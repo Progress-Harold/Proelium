@@ -19,6 +19,8 @@
 		8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */; };
 		8E051A4E2422D8B2002E98C9 /* TokenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */; };
 		8E051A5024241F7C002E98C9 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4F24241F7B002E98C9 /* Token.swift */; };
+		A265DAF524328C8C00D49D13 /* TokenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265DAF424328C8C00D49D13 /* TokenKey.swift */; };
+		A265DAF7243290EB00D49D13 /* SpaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265DAF6243290EB00D49D13 /* SpaceController.swift */; };
 		A26D3C3B24231F5F00F29436 /* GameSceneTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardStructure.swift; sourceTree = "<group>"; };
 		8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDelegate.swift; sourceTree = "<group>"; };
 		8E051A4F24241F7B002E98C9 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		A265DAF424328C8C00D49D13 /* TokenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenKey.swift; sourceTree = "<group>"; };
+		A265DAF6243290EB00D49D13 /* SpaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpaceController.swift; path = Proelium/DataLibrary/SpaceController.swift; sourceTree = SOURCE_ROOT; };
 		A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,7 @@
 				8E051A372422B362002E98C9 /* Movie */,
 				8E051A362422B35B002E98C9 /* Art */,
 				8E051A352422B345002E98C9 /* AnimationLibrary */,
+				A265DAF324328C5500D49D13 /* DataLibrary */,
 				8E051A342422B333002E98C9 /* Utilities */,
 				8E051A332422B32A002E98C9 /* View */,
 				8E051A312422B25C002E98C9 /* Resources */,
@@ -198,6 +203,7 @@
 		8E051A402422B3F1002E98C9 /* ObjectControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A265DAF6243290EB00D49D13 /* SpaceController.swift */,
 			);
 			path = ObjectControllers;
 			sourceTree = "<group>";
@@ -262,6 +268,14 @@
 				8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A265DAF324328C5500D49D13 /* DataLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A265DAF424328C8C00D49D13 /* TokenKey.swift */,
+			);
+			path = DataLibrary;
 			sourceTree = "<group>";
 		};
 		A26D3C3C24232DAE00F29436 /* Sample */ = {
@@ -351,7 +365,9 @@
 				8E051A222422B23B002E98C9 /* GameViewController.swift in Sources */,
 				8E051A492422C54F002E98C9 /* Space.swift in Sources */,
 				8E051A1A2422B23B002E98C9 /* AppDelegate.swift in Sources */,
+				A265DAF7243290EB00D49D13 /* SpaceController.swift in Sources */,
 				A26D3C3B24231F5F00F29436 /* GameSceneTemplate.swift in Sources */,
+				A265DAF524328C8C00D49D13 /* TokenKey.swift in Sources */,
 				8E051A5024241F7C002E98C9 /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
