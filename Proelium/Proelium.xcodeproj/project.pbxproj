@@ -19,10 +19,22 @@
 		8E051A4B2422D289002E98C9 /* GameBoardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */; };
 		8E051A4E2422D8B2002E98C9 /* TokenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */; };
 		8E051A5024241F7C002E98C9 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E051A4F24241F7B002E98C9 /* Token.swift */; };
+		8E655B18243D4051002DD061 /* ProeliumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E655B17243D4051002DD061 /* ProeliumTests.swift */; };
+		8E655B1F243D4063002DD061 /* SpaceUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E655B0F243D3F6B002DD061 /* SpaceUnitTests.swift */; };
 		A265DAF524328C8C00D49D13 /* TokenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265DAF424328C8C00D49D13 /* TokenKey.swift */; };
 		A265DAF7243290EB00D49D13 /* SpaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265DAF6243290EB00D49D13 /* SpaceController.swift */; };
 		A26D3C3B24231F5F00F29436 /* GameSceneTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E655B1A243D4051002DD061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E051A0E2422B23B002E98C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E051A152422B23B002E98C9;
+			remoteInfo = Proelium;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8E051A162422B23B002E98C9 /* Proelium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proelium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +51,10 @@
 		8E051A4A2422D289002E98C9 /* GameBoardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardStructure.swift; sourceTree = "<group>"; };
 		8E051A4D2422D8B2002E98C9 /* TokenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDelegate.swift; sourceTree = "<group>"; };
 		8E051A4F24241F7B002E98C9 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		8E655B0F243D3F6B002DD061 /* SpaceUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceUnitTests.swift; sourceTree = "<group>"; };
+		8E655B15243D4051002DD061 /* ProeliumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProeliumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E655B17243D4051002DD061 /* ProeliumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProeliumTests.swift; sourceTree = "<group>"; };
+		8E655B19243D4051002DD061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A265DAF424328C8C00D49D13 /* TokenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenKey.swift; sourceTree = "<group>"; };
 		A265DAF6243290EB00D49D13 /* SpaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpaceController.swift; path = Proelium/DataLibrary/SpaceController.swift; sourceTree = SOURCE_ROOT; };
 		A26D3C3A24231F5F00F29436 /* GameSceneTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneTemplate.swift; sourceTree = "<group>"; };
@@ -52,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8E655B12243D4051002DD061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				8E051A182422B23B002E98C9 /* Proelium */,
+				8E655B16243D4051002DD061 /* ProeliumTests */,
 				8E051A172422B23B002E98C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				8E051A162422B23B002E98C9 /* Proelium.app */,
+				8E655B15243D4051002DD061 /* ProeliumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +295,16 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		8E655B16243D4051002DD061 /* ProeliumTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E655B0F243D3F6B002DD061 /* SpaceUnitTests.swift */,
+				8E655B17243D4051002DD061 /* ProeliumTests.swift */,
+				8E655B19243D4051002DD061 /* Info.plist */,
+			);
+			path = ProeliumTests;
+			sourceTree = "<group>";
+		};
 		A265DAF324328C5500D49D13 /* DataLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +341,24 @@
 			productReference = 8E051A162422B23B002E98C9 /* Proelium.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8E655B14243D4051002DD061 /* ProeliumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E655B1C243D4051002DD061 /* Build configuration list for PBXNativeTarget "ProeliumTests" */;
+			buildPhases = (
+				8E655B11243D4051002DD061 /* Sources */,
+				8E655B12243D4051002DD061 /* Frameworks */,
+				8E655B13243D4051002DD061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E655B1B243D4051002DD061 /* PBXTargetDependency */,
+			);
+			name = ProeliumTests;
+			productName = ProeliumTests;
+			productReference = 8E655B15243D4051002DD061 /* ProeliumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -318,6 +371,10 @@
 				TargetAttributes = {
 					8E051A152422B23B002E98C9 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					8E655B14243D4051002DD061 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8E051A152422B23B002E98C9;
 					};
 				};
 			};
@@ -335,6 +392,7 @@
 			projectRoot = "";
 			targets = (
 				8E051A152422B23B002E98C9 /* Proelium */,
+				8E655B14243D4051002DD061 /* ProeliumTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,6 +407,13 @@
 				8E051A272422B23E002E98C9 /* Assets.xcassets in Resources */,
 				8E051A2A2422B23E002E98C9 /* LaunchScreen.storyboard in Resources */,
 				8E051A1E2422B23B002E98C9 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E655B13243D4051002DD061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +437,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8E655B11243D4051002DD061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E655B1F243D4063002DD061 /* SpaceUnitTests.swift in Sources */,
+				8E655B18243D4051002DD061 /* ProeliumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E655B1B243D4051002DD061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E051A152422B23B002E98C9 /* Proelium */;
+			targetProxy = 8E655B1A243D4051002DD061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8E051A232422B23B002E98C9 /* Main.storyboard */ = {
@@ -544,6 +626,46 @@
 			};
 			name = Release;
 		};
+		8E655B1D243D4051002DD061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MANJGMHYB;
+				INFOPLIST_FILE = ProeliumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = John.ProeliumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proelium.app/Proelium";
+			};
+			name = Debug;
+		};
+		8E655B1E243D4051002DD061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MANJGMHYB;
+				INFOPLIST_FILE = ProeliumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = John.ProeliumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proelium.app/Proelium";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,6 +683,15 @@
 			buildConfigurations = (
 				8E051A2F2422B23E002E98C9 /* Debug */,
 				8E051A302422B23E002E98C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E655B1C243D4051002DD061 /* Build configuration list for PBXNativeTarget "ProeliumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E655B1D243D4051002DD061 /* Debug */,
+				8E655B1E243D4051002DD061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
